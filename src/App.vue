@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar />
+    <div class="container">
+      <div class="page-text__div my-5">
+        <h1 class="mb-3">Vermicompost Calculator</h1>
+        <p class="mt-4">
+          Just simply enter the dimensions of you garden bed and find out how
+          much vermicompost you'd need to for beneficial effects.
+        </p>
+      </div>
+
+      <Calculator />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "./components/NavBar.vue";
+import Calculator from "./components/Calculator.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+    Calculator,
+  },
+};
 </script>
 
 <style>
@@ -23,6 +35,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
