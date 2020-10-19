@@ -11,8 +11,8 @@
           growth and health, as well as improving soil health.
         </p>
         <p>
-          Just simply enter the dimensions of you garden bed and find out how
-          much vermicompost you'd need to for beneficial effects.
+          Simply enter the dimensions of your garden bed to find out how
+          much vermicompost you need.
         </p>
       </div>
       <Calculator />
