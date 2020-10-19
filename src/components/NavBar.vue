@@ -1,16 +1,22 @@
 <template>
   <div class="nav-bar">
-  <b-navbar toggleable="sm" type="light" variant="light">
-    <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+    <b-navbar toggleable="sm" type="light" variant="light">
+      <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-    <b-navbar-brand>BootstrapVue</b-navbar-brand>
+      <b-navbar-brand href="/"
+        ><img
+          src="../assets/logo_transparent.png"
+          alt=""
+          id="logo"
+          class="img-fluid"
+      /></b-navbar-brand>
 
-    <b-collapse id="nav-text-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-text>Navbar text</b-nav-text>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+      <b-collapse id="nav-text-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="/">Home</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
@@ -23,4 +29,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#logo {
+  max-width: 20%;
+}
+
+.nav-link{
+  color: #333;
+  font-size: 18px;
+}
 </style>
