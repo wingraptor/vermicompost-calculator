@@ -4,18 +4,21 @@
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
       <b-navbar-brand href="/"
-        ><img
+        >
+        <!-- <img
           src="../assets/logo_transparent.png"
           alt=""
           id="logo"
           class="img-fluid"
-      /></b-navbar-brand>
+      /> -->
+      Home
+      </b-navbar-brand>
 
-      <b-collapse id="nav-text-collapse" is-nav>
+      <!-- <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item href="/">Home</b-nav-item>
         </b-navbar-nav>
-      </b-collapse>
+      </b-collapse> -->
     </b-navbar>
   </div>
 </template>

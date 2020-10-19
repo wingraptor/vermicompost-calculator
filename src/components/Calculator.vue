@@ -1,5 +1,5 @@
 <template>
-  <div class="calculator border p-4 rounded bg-light">
+  <div class="calculator border p-4 rounded bg-light shadow-lg">
     <!-- Calculation Form -->
     <b-form
       @submit="onSubmit"
@@ -7,6 +7,8 @@
       v-if="show && !calculatedValue"
       class="d-flex flex-column align-items-center"
     >
+
+    <h2>Calculator</h2>
 
       <!-- Width Input -->
       <b-form-group id="input-group-1" label="Width" label-for="width">
