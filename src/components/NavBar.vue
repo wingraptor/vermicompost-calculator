@@ -1,17 +1,17 @@
 <template>
   <div class="nav-bar">
-    <b-navbar toggleable="sm" type="light" variant="light">
+    <b-navbar type="light" variant="light">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
       <b-navbar-brand href="/"
         >
-        <!-- <img
+        <img
           src="../assets/logo_transparent.png"
           alt=""
           id="logo"
           class="img-fluid"
-      /> -->
-      Home
+      />
+      <!-- Home -->
       </b-navbar-brand>
 
       <!-- <b-collapse id="nav-text-collapse" is-nav>

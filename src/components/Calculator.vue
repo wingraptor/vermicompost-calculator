@@ -1,5 +1,5 @@
 <template>
-  <div class="calculator border p-4 rounded bg-light shadow-lg">
+  <div class="calculator border p-4 rounded bg-light shadow-lg mb-4">
     <!-- Calculation Form -->
     <b-form
       @submit="onSubmit"
@@ -11,7 +11,7 @@
     <h2>Calculator</h2>
 
       <!-- Width Input -->
-      <b-form-group id="input-group-1" label="Width" label-for="width">
+      <b-form-group id="input-group-1" label="Width of bed" label-for="width">
         <b-form-input
           id="width"
           type="number"
@@ -21,14 +21,14 @@
         ></b-form-input>
       </b-form-group>
 
-      <!-- Height Input -->
-      <b-form-group id="input-group-2" label="Height" label-for="height">
+      <!-- length Input -->
+      <b-form-group id="input-group-2" label="Length of bed " label-for="length">
         <b-form-input
-          id="height"
+          id="length"
           type="number"
           required
-          placeholder="Enter Height"
-          v-model="form.height"
+          placeholder="Enter Length"
+          v-model="form.length"
         ></b-form-input>
       </b-form-group>
 
@@ -73,7 +73,7 @@ export default {
       },
       form: {
         width: "",
-        height: "",
+        length: "",
         units: "",
       },
       show: true,
@@ -92,7 +92,7 @@ export default {
       evt.preventDefault();
       // Reset our form values
       this.form.width = "";
-      this.form.height = "";
+      this.form.length = "";
       this.form.units = "";
       // Reset calculated value
       this.calculatedValue = "";
@@ -103,8 +103,8 @@ export default {
       });
     },
     calculateVermicompostMass(formData) {
-      const { width, height, units } = formData;
-      const area = width * height;
+      const { width, length, units } = formData;
+      const area = width * length;
       let multiplier;
       units === "meters"
         ? (multiplier = this.constants.vermicompostMassPerM2)
