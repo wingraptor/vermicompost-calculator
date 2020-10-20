@@ -48,7 +48,7 @@
     </b-form>
 
     <!-- Results Display Div -->
-    <div v-if="calculatedValue" class="results d-flex flex-column align-items-center">
+    <div v-if="calculatedValue" class="results d-flex flex-column align-items-center text-center">
       <h1 class="mb-3">You Need:</h1>
       <h5><span class="text-danger">{{ (calculatedValue).toFixed(2) }}</span> lbs  of vermicompost</h5>
       <h5 class=text-center>or</h5>
