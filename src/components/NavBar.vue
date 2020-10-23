@@ -3,7 +3,7 @@
     <b-navbar type="light" variant="light">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="/"
+      <b-navbar-brand href="https://conucowormfarm.com"
         >
         <img
           src="../assets/logo_transparent.png"
