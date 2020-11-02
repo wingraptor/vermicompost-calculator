@@ -1,6 +1,6 @@
 <template>
   <div class="nav-bar">
-    <b-navbar type="light" variant="light">
+    <b-navbar class="p-3">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
       <b-navbar-brand href="https://conucowormfarm.com"
@@ -33,7 +33,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #logo {
-  max-width: 20%;
+  max-width: 192px;
 }
 
 .nav-link{
