@@ -6,7 +6,7 @@
       <b-navbar-brand href="https://conucowormfarm.com"
         >
         <img
-          src="../assets/logo_transparent.png"
+          src="../assets/logoTwo.png"
           alt=""
           id="logo"
           class="img-fluid"
